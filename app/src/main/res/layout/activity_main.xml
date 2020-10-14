@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b2"
+    android:orientation="vertical"
+    android:padding="7px"
+    tools:context=".MainActivity"
+    tools:visibility="visible">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1.5"
+        android:orientation="horizontal">
+
+        <Button
+            android:onClick="display"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_margin="10px"
+            android:layout_weight="1"
+            android:background="@drawable/selector"
+            android:text="设置平衡"></Button>
+
+        <Button
+            android:onClick="start"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_margin="10px"
+            android:layout_weight="1"
+            android:background="@drawable/selector"
+            android:text="启动"></Button>
+
+        <Button
+            android:id="@+id/stop"
+            android:onClick="stop"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_margin="10px"
+            android:layout_weight="1"
+            android:background="@drawable/selector"
+            android:text="停止"></Button>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="000"
+        android:textColor="#6CA1C8"
+        android:textSize="100px"></TextView>
+
+    <LinearLayout
+        android:id="@+id/uav"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="5"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textview2"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#bea359"
+                android:textSize="60px"></TextView>
+
+            <TextView
+                android:id="@+id/textview3"
+                android:textColor="#bea359"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="60px"></TextView>
+
+            <TextView
+                android:id="@+id/textview4"
+                android:textColor="#bea359"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="60px"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:onClick="Front"
+                android:id="@+id/btq"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:text="前"></Button>
+
+            <Button
+                android:onClick="After"
+                android:id="@+id/bth"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:text="后"></Button>
+
+            <Button
+                android:onClick="Left"
+                android:id="@+id/btz"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:text="左"></Button>
+
+            <Button
+                android:onClick="Right"
+                android:id="@+id/bty"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:text="右"></Button>
+
+            <Button
+                android:onClick="Shun"
+                android:id="@+id/bts"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:text="顺"></Button>
+
+            <Button
+                android:onClick="Ni"
+                android:id="@+id/btn"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:text="逆"></Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"></TextView>
+
+            <Button
+                android:onClick="Cu"
+                android:id="@+id/btc"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:text="粗调"></Button>
+
+            <Button
+                android:onClick="btsave"
+                android:id="@+id/btbc"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:layout_weight="2"
+                android:background="@drawable/selector"
+                android:text="保存平衡值"></Button>
+
+            <Button
+                android:onClick="Xi"
+                android:id="@+id/btx"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:layout_weight="1"
+                android:background="@drawable/selector"
+                android:text="细调"></Button>
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/uav2"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="5"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/qian"
+            android:layout_width="200px"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector"
+            android:text="前"></Button>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/zuo"
+                android:layout_width="200px"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector"
+                android:text="左"></Button>
+            <Button
+                android:layout_width="200px"
+                android:layout_height="0px"
+                tools:visibility="invisible"></Button>
+            <Button
+                android:id="@+id/you"
+                android:layout_width="200px"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector"
+                android:text="右"></Button>
+        </LinearLayout>
+        <Button
+            android:id="@+id/hou"
+            android:layout_width="200px"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector"
+            android:text="后"></Button>
+    </LinearLayout>
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:progressDrawable="@drawable/seekbar"
+        android:thumb="@drawable/c4"></SeekBar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="2">
+
+    </LinearLayout>
+</LinearLayout>
